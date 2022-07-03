@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "eslint-config-egg/typescript",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/ban-types": "off",
+    "import/no-relative-packages": "error"
+  },
+  "overrides": [
+    {
+      "files": [
+        "core/*/test/**/*",
+        "plugin/*/test/**/*",
+        "standalone/*/test/**/*"
+      ],
+      "rules": {
+        "import/no-relative-packages": "off"
+      }
+    }
+  ]
+}
