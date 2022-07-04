@@ -6,10 +6,9 @@
   "scripts": {
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "clean": "tsc --build --clean",
+    "clean": "tsc --build --clean && rm -rf build",
     "build": "npm run clean && tsc -p ./tsconfig.build.json && node scripts/after.js",
-    "scan": "node build/scan.js",
-    "dev": "npm run build && npm run scan && npm run build/index.js"
+    "dev": "npm run build && node build/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +26,10 @@
     "eslint-config-egg": "^12.0.0",
     "reflect-metadata": "^0.1.13",
     "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "ali-rds": "^3.4.0",
+    "basic-auth": "^2.0.1",
+    "kitx": "^2.1.0"
   }
 }

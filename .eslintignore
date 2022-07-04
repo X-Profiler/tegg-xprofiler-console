@@ -15,3 +15,4 @@ plugin/*/test/fixtures/**/oneapi
 plugin/*/test/fixtures/**/logs
 !plugin/tegg-compatible/typings/index.d.ts
 lib
+build
