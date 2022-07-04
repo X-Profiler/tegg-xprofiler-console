@@ -28,6 +28,7 @@
     "typescript": "^4.7.3"
   },
   "dependencies": {
+    "@xprofiler/tegg": "^0.1.3",
     "ali-rds": "^3.4.0",
     "basic-auth": "^2.0.1",
     "ejs": "^3.1.8",

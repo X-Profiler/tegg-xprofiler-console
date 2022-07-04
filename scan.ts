@@ -10,9 +10,7 @@ export async function scan() {
     needWriteFile: false,
     configDir: 'config',
     extensions: [ '.ts' ],
-    excluded: [ 'start.js', 'start.ts', 'scan.js', 'scan.ts' ],
   });
   const manifest = await scanner.scan(baseDir);
   await fs.writeFile(path.join(baseDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
 }
-
