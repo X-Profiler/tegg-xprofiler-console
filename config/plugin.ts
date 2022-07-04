@@ -15,4 +15,9 @@ export default {
     enable: true,
     path: path.join(__dirname, '../src/plugin/render'),
   },
+
+  static: {
+    enable: true,
+    path: path.join(__dirname, '../src/plugin/static'),
+  },
 };

@@ -6,6 +6,8 @@
   "exclude": [
     "lib",
     "test",
-    "**/*.test.ts"
+    "**/*.test.ts",
+    "src/view",
+    "src/public",
   ]
 }

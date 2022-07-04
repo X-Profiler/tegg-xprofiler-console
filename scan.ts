@@ -10,6 +10,7 @@ export async function scan() {
     needWriteFile: false,
     configDir: 'config',
     extensions: [ '.ts' ],
+    excluded: [ 'view', 'public' ],
   });
   const manifest = await scanner.scan(baseDir);
   await fs.writeFile(path.join(baseDir, 'manifest.json'), JSON.stringify(manifest, null, 2));

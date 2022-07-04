@@ -16,3 +16,5 @@ plugin/*/test/fixtures/**/logs
 !plugin/tegg-compatible/typings/index.d.ts
 lib
 build
+src/public
+src/view

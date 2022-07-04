@@ -29,4 +29,8 @@ export default {
       root: path.join(__dirname, '../src/view'),
     },
   },
+
+  static: {
+    root: path.join(__dirname, '../src/public'),
+  },
 };
