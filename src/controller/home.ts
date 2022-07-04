@@ -1,16 +1,17 @@
 import { HttpController, HttpMethod, HTTPMethodEnum, Inject } from '@xprofiler/tegg';
-import { UserData } from '../plugin/auth';
+import { Render } from '../plugin/render';
 
 @HttpController()
 export default class HomeController {
   @Inject()
-  private user: UserData;
+  private render: Render;
 
   @HttpMethod({
     path: '/',
     method: HTTPMethodEnum.GET,
   })
   async index() {
-    return this.user;
+    const html = await this.render.render('index');
+    return html;
   }
 }

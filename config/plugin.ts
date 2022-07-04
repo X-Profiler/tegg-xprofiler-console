@@ -10,4 +10,9 @@ export default {
     enable: true,
     path: path.join(__dirname, '../src/plugin/mysql'),
   },
+
+  render: {
+    enable: true,
+    path: path.join(__dirname, '../src/plugin/render'),
+  },
 };

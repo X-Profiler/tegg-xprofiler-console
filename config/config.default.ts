@@ -1,3 +1,5 @@
+import path from 'path';
+
 export default {
   port: 7001,
 
@@ -17,6 +19,14 @@ export default {
         password: 'root',
         database: 'xprofiler_logs',
       },
+    },
+  },
+
+  render: {
+    engine: 'ejs',
+    options: {
+      cache: true,
+      root: path.join(__dirname, '../src/view'),
     },
   },
 };
