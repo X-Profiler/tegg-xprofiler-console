@@ -1,3 +1,5 @@
 import UserData from './user';
-export { UserData };
+import { User, InsertResults } from './type';
+
+export { UserData, User, InsertResults };
 

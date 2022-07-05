@@ -12,4 +12,8 @@ export default class User {
   get userId(): number {
     return this.user?.userId;
   }
+
+  get nick(): string {
+    return this.user?.nick;
+  }
 }
