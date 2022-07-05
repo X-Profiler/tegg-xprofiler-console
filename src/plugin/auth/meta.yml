@@ -1,1 +1,3 @@
 name: auth
+dependencies:
+  - name: static

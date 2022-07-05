@@ -31,6 +31,7 @@ export default {
   },
 
   static: {
-    root: path.join(__dirname, '../src/public'),
+    prefix: '/public/',
+    dir: path.join(__dirname, '../src/public'),
   },
 };
